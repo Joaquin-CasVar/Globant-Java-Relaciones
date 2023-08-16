@@ -7,15 +7,17 @@ public class Perro {
     private String raza;
     private int edad;
     private double tamanio;
+    private boolean adoptado;
 
     public Perro() {
     }
 
-    public Perro(String nombre, String raza, int edad, double tamanio) {
+    public Perro(String nombre, String raza, int edad, double tamanio, boolean adoptado) {
         this.nombre = nombre;
         this.raza = raza;
         this.edad = edad;
         this.tamanio = tamanio;
+        this.adoptado = adoptado;
     }
 
     public String getNombre() {
@@ -48,6 +50,14 @@ public class Perro {
 
     public void setTamanio(double tamanio) {
         this.tamanio = tamanio;
+    }
+
+    public boolean isAdoptado() {
+        return adoptado;
+    }
+
+    public void setAdoptado(boolean adoptado) {
+        this.adoptado = adoptado;
     }
 
     @Override
